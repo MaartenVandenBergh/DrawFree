@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/borderColour"
+        android:padding="5dp"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/buttonNew"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/newd"
+                android:text="@string/emptyString" />
+
+            <Button
+                android:id="@+id/buttonDraw"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/paintcolor"
+                android:text="@string/emptyString" />
+
+            <Button
+                android:id="@+id/buttonErase"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/erase"
+                android:text="@string/emptyString" />
+
+            <Button
+                android:id="@+id/buttonFacebook"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/facebook"
+                android:text="@string/emptyString" />
+        </LinearLayout>
+    </RelativeLayout>
+
+	<view.DrawingPanel
+	    android:id="@+id/drawing"
+	    android:layout_width="match_parent"
+	    android:layout_height="350dp" />
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="55dp"
+	    android:background="@color/borderColour"
+	    android:padding="5dp"
+	    tools:ignore="UselessParent" >
+
+	    <LinearLayout
+	        android:id="@+id/LinearLayout01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true" >
+
+	        <Button
+	            android:id="@+id/buttonBrown"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/brown"
+	            android:text="@string/emptyString" 
+	            android:tag="@drawable/brown"
+	            android:onClick="changeColor"
+	            />
+
+	        <Button
+	            android:id="@+id/buttonRed"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/red"
+	            android:text="@string/emptyString"
+	            android:tag="@drawable/red"
+	            android:onClick="changeColor"/>
+
+	        <Button
+	            android:id="@+id/buttonYellow"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/yellow"
+	            android:text="@string/emptyString"
+	            android:tag="@drawable/yellow"
+	            android:onClick="changeColor"/>
+
+	        <Button
+	            android:id="@+id/buttonGreen"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/green"
+	            android:paddingRight="5dp"
+	            android:text="@string/emptyString"
+	             android:tag="@drawable/green"
+	             android:onClick="changeColor"/>
+
+	        <Button
+	            android:id="@+id/buttonBlue"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/blue"
+	            android:paddingRight="5dp"
+	            android:text="@string/emptyString" 
+	            android:tag="@drawable/blue"
+	            android:onClick="changeColor"/>
+
+	        <Button
+	            android:id="@+id/buttonBlack"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:background="@drawable/black"
+	            android:text="@string/emptyString"
+	            android:tag="@drawable/black"
+	            android:onClick="changeColor"/>
+	    </LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
